@@ -1,0 +1,249 @@
+/* Nav bar code */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  overflow-x: hidden;
+}
+.left {
+    width: 20%;
+    float: left;
+    background-color: black;
+    height: 800px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.nav {
+    position: relative;
+    left: -40px;
+    padding-top: 20rem;
+    list-style: none;
+    width: 100%;
+    text-align: right;
+   
+}
+.nav li {    
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    
+}
+.nav li a {
+    display: block;
+    line-height: 3em;
+    width: 100%;
+    text-decoration: none;
+    color: blanchedalmond;
+    box-sizing: border-box;
+    padding-right: 2rem;
+}
+
+.nav li a:hover{
+    background-color: gray;
+}
+
+/* responsive nav bar */
+@media screen and (max-width: 600px) {
+body {
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  width: 100%;
+  
+}
+
+    .left {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        height: 6rem;
+    }
+
+    .nav {
+text-align: center;
+padding-top: 1rem;
+    }
+
+    .nav li {
+      display: inline-flex;
+      top: 1rem;
+      left: 0;
+    }
+    
+    #why-warm-up {
+    display: none;
+    max-width: 100%;
+      
+  }
+
+.info {
+  position: relative;
+  width: 100%;
+  padding: 0;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#reviews {
+  position: relative;
+  z-index: 2;
+  display:flex;
+  flex-wrap: wrap;
+  padding-bottom: 5rem;
+margin: 0;}
+
+}
+
+/* Image of Joss containing overlay text */
+#why-warm-up {
+    height: 100%;
+    width: 1200px;
+    float: right;
+}
+
+.kenburns-left {
+    background-image: url("./images/welcome\ img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    max-width: 1150px;
+    align-self: center;
+    border: none;
+    margin-top: 5rem;
+  display: flex;
+   
+}
+.text {
+    font-size: 5rem;
+   position: absolute;
+   bottom: 0;
+    width: 100%;
+    color: black;
+    line-height: 2;
+    padding-left: 20%;
+    background-color: white;
+    opacity: .3;
+}
+
+/* info on the books */
+
+.info {
+position: absolute;
+padding-left: 20rem;
+padding-right: 5rem;
+top: 800px;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.books {
+    height: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-bottom: 5rem;
+}
+
+
+/* reviews */
+
+
+#reviews {
+    position: relative;
+    z-index: 2;
+   left: 25rem;
+    top: 90rem;
+    display: inline-flex;
+    padding-bottom: 5rem;
+
+}
+
+.review-title {
+   position: absolute;
+   margin: auto;
+   margin-left: 40%;
+}  
+
+.review-title h1 {
+        position: relative;
+        padding: 0;
+        margin: 0;
+        font-family: "Raleway", sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        color: #080808;
+        text-align:center;
+        text-transform:uppercase;
+        padding-bottom: 8px;
+        margin-bottom: 8px;
+        border-bottom: solid 1px grey;
+    
+  }
+  
+.card {
+    --border-radius: 0.75rem;
+    --primary-color: #7257fa;
+    --secondary-color: #3c3852;
+    width: 210px;
+    font-family: "Arial";
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background: #f1f1f3;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+    position: relative;
+    margin: 3rem;
+    top: 3rem;
+   
+   
+
+  }
+
+  
+  
+  .card > * + * {
+    margin-top: 1.1em;
+  }
+  
+  .card .card__content {
+    color: var(--secondary-color);
+    font-size: 0.86rem;
+  }
+  
+  .card .card__title {
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .card .card__date {
+    color: #6e6b80;
+    font-size: 0.8rem;
+  }
+  
+  .card .card__arrow {
+    position: absolute;
+    background: var(--primary-color);
+    padding: 0.4rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    bottom: 0;
+    right: 0;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card svg {
+    transition: 0.2s;
+  }
+  
+  
+ 
